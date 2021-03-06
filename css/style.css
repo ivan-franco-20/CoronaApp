@@ -1,0 +1,331 @@
+:root{
+    /* colores */
+    --verde: #1D957F;
+    --azul: #4285F4;
+    --gris: #616161;
+    --negro: #000;
+    --blancoHueso: #FAFBFD;
+    --blanco: #ffffff;
+
+    /* -- FUENTE -- */
+    --fuentePrincipal: 'Rubik', sans-serif;
+    --fuente: 'Raleway', sans-serif;
+
+    /* TAMAÑO */
+    --f_bigest:44px;
+    --f_big:36px;
+    --f_normal: 16px;
+    --f_small:12px;
+    --f_smaller: 11px;
+    --f_smallest:9px;
+
+
+
+
+    /* Separacion de lineas */
+    --lineaParrafo: 16.62px;
+    --lineaBigTitles: 55.44px;
+    --lineaMedTitles: 42.66px;
+    --lineaTitles: 22.16px;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** 1rem = 10px **/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    background-color: var(--blanco);
+    max-width: 115.2rem;
+    margin: 0 auto;
+    position: relative;
+}
+/* UTILIDADES */
+.enlace{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.contenedor{
+    max-width: 100rem;
+}
+.centrar{
+    margin: 0 auto;
+}
+.centrar_texto{
+    text-align: center;
+}
+.end{
+    margin-top: auto;
+}
+
+/* Barra de navegacion */
+.barra_nav{
+    max-width: 74rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: var(--azul); */
+    margin-top: 3.7rem;
+    padding-right: 1rem;
+    margin-left: 5.2rem;
+}
+.logo{
+    height: 4rem;
+    width: 14.3rem;
+    background-size: cover;
+    vertical-align: middle;
+}
+.menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: var(--f_small);
+    margin-right: 4rem;
+    color: var(--negro);
+    letter-spacing: .2rem;
+    font-weight: bold;
+}
+.menu a:last-child{
+    margin-right: 0;
+}
+.header{
+    max-width: 1152px;
+    max-width: 70rem;
+
+}
+.rectangulo{
+    background-color: var(--verde);
+    height: 70rem;
+    width: 25%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 3rem 0 0 3rem;
+    z-index: -1;
+}
+
+/* -- CONTENEDOR DEL HEADER -- */
+
+.contenedor_header{
+    max-width: 1045px;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    row-gap: 6rem;
+    margin-top: 8.5rem;
+    margin-right: 5.257rem;
+    margin: 8.5rem 5.257rem 6.058rem 5rem ;
+}
+.contenido_header{
+    margin: auto 2rem;
+    max-width: 497px;
+}
+.imagen_header{
+    max-width: 54.7rem;
+    max-height: 39.4rem;
+}
+.imagen_header img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.titulo_grande{
+    font-size: var(--f_bigest);
+    margin-bottom: 0;
+    line-height: var(--lineaBigTitles);
+    margin: 0;
+}
+span{
+    color: var(--verde);
+}
+.parrafo{
+    margin: 1.1rem 0; 
+    max-width: 37.5rem;
+    line-height: var(--lineaParrafo);
+    color: var(--gris);
+    font-size: 12px;
+}
+
+
+/* BOTON */
+.boton{
+    width: 14.4rem;
+    height: 4rem;
+    color: var(--blancoHueso);
+    background-color: var(--verde);
+    border: none;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    font-family: var(--fuente);
+    font-weight: bold;
+    font-size: var(--f_smaller) ;
+    letter-spacing: .2rem;
+}
+.boton:hover{
+    cursor: pointer;
+}
+.icono_play{
+    display:  inline-flex;
+    width: fit-content;
+    align-items: center;
+    gap: 1rem;
+    color: var(--negro);
+    letter-spacing: .2rem;
+}
+
+/* INFORMACION */
+
+.seccion_informacion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14.5rem 5rem ;
+    padding: 2rem;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10rem;
+}
+.tarjeta{
+    justify-self: center;
+}
+.rectangulo_tarjeta{
+    height: 64rem;
+    width: 36rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 2.5rem 1.5rem;
+    background-color: var(--blanco);
+    border: 3px solid var(--verde);
+    border-radius: 2rem;
+    text-align: center;
+}
+.rectangulo_tarjeta h1{
+    width: 100%;
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+.rectangulo_tarjeta p{
+    text-align: center;
+    font-weight: normal;
+    line-height: var(--lineaParrafo);
+    color: var(--gris);
+}
+.contenedor_imagen{
+    width: 26rem;
+    height: 26rem;
+    margin: 7.3rem auto 2.4rem;
+    background-color: var(--blancoHueso);
+    border-radius: 50%;
+    background-image: url(../img/tarjeta_mujer.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+    -webkit-box-shadow: 0px 13px 13px -8px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0px 13px 13px -8px rgba(0,0,0,0.23);
+    box-shadow: 0px 13px 13px -8px rgba(0,0,0,0.23);
+}
+.slider_movil{
+    margin-top: auto;
+}
+.fondo_tarjeta{
+    position: absolute;
+    z-index: -1;
+    top: 80px;
+    left: 41px;
+}
+.informacion{
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contendor_datos{
+    display: grid;
+    grid-column: 1 / 3;
+    justify-self: center;
+    position: relative;
+}
+.datos_informativos{
+    width: 65.4rem;
+    height: 11.7rem;
+    border-radius: 1rem;
+    background: no-repeat center url(../img/Group\ 20.svg);
+}
+.fondo_cuadros{
+    position: absolute;
+    width: 76.1rem;
+    height: 20rem;
+    background: no-repeat url(../img/cuadros.svg);
+    z-index: -1;
+    top: -52px;
+    right: -70px;
+}
+
+
+/* -- CARACTERISTICAS --  */
+.caracteristicas{
+    padding: 2rem;
+}
+.titulo_caracteristicas{
+    width: 48.7rem;
+    text-align: center;
+    margin: 0  auto 2.9rem;
+    padding: 2rem 0 ;
+}
+.titulo_caracteristicas h1{
+    font-size: 4.4rem;
+    font-weight: bold;
+    line-height: var(--lineaBigTitles);
+    margin-bottom: 1.6rem;
+}
+.titulo_caracteristicas p{
+    color: var(--gris);
+    font-size: var(--f_small);
+}
+.servicios_caracteristicas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7rem;
+    margin-bottom: 6rem;
+    /* position: relative; */
+}
+.fondo_servicios{
+    position: absolute;
+    z-index: -2;
+    top: 13px;
+    left: -31px;    
+}
+.fondo_servicios_2{
+    position: absolute;
+    z-index: -1;
+    top: -47px;
+    left: -80px;
+}
+.contenedor_servicios{
+    position: relative;
+    width: 27.8rem;
+    height: 27rem;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 1rem;
+    background-color: var(--blancoHueso);
+}
+
+.contenedor_servicios h1{
+    margin-top: 5rem;
+    font-size: var(--f_normal);
+}
+.contenedor_servicios p{
+    font-size: var(--f_small);
+    color: var(--gris);
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin: 0 auto 4rem;
+}
