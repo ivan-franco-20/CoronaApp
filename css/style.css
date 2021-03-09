@@ -91,7 +91,6 @@ body {
     display: flex;
     justify-content: space-between;
     width: fit-content;
-    transition: all 3s ease;
 }
 .menu li{
     margin-right: 3rem;
@@ -136,7 +135,6 @@ body {
     }
     .header{
         max-width: 100%;
-        /* background-color: #4285F4; */
         margin: 0 auto;
     }
     .rectangulo{
@@ -166,19 +164,7 @@ body {
     .input_menu:checked ~ .menu a{
         color: var(--blanco);
         font-weight: normal;
-    }
-    /* .input_menu:checked ~ .rectangulo_tarjeta{
-        display: block;
-        position: absolute;
-        right: -38px;
-        top: 38px;
-    } */
-
-    .input_menu{
-        display: none;
-    }
-    
-    
+    }    
 }
 
 
