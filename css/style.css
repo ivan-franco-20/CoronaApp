@@ -265,13 +265,32 @@ span{
     right: -70px;
 }
 /* -- CARACTERISTICAS --  */
-.contenedor_caracteristicas{
+.caracteristicas{
     display: grid;
-    grid-template-columns:  repeat(2 , 1fr);
+    grid-template-columns: repeat(2,50%);
+    gap: 2rem;
     align-items: center;
-    column-gap: 3rem;
 }
-
+.informacion_caracteristicas{
+    justify-self: start;
+}
+.informacion_caracteristicas h1{
+    font-size: var(--f_bigest);
+    font-weight: bold;
+    line-height: var(--lineaBigTitles);
+}
+.informacion_caracteristicas p {
+    color: var(--gris);
+    font-size: var(--f_small);
+    line-height: var(--lineaParrafo);
+    max-width: 70%;
+}
+.video_caracteristicas{
+    max-width: 52rem;
+}
+.video_caracteristicas img{
+    width: 100%;
+}
 
 /* -- SERVICIOS --  */
 .servicios{
