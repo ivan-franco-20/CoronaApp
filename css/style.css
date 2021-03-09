@@ -150,20 +150,22 @@ body {
         position: absolute;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        gap: 1.5rem;
+        justify-content: space-evenly;
+        gap: 2rem;
         right: -38px;
         top: 24px;
         text-align: end;
         background-color: var(--verde);
         height: 30rem;
-        padding-top: 2rem;
         padding-right: 2rem;
-        /* transition: all 1s ease; */
+        font-size: var(--f_big);
     }
     .input_menu:checked ~ .menu a{
         color: var(--blanco);
         font-weight: normal;
+    }    
+    .input_menu:checked ~ .menu li{
+        border-bottom: 2px solid #168570ef;
     }    
 }
 
