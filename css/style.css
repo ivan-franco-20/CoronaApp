@@ -63,9 +63,13 @@ body {
 }
 
 /* Barra de navegacion */
+.header{
+    max-width: 1152px;
+    max-width: 80rem;
+}
 .barra_nav{
     max-width: 74rem;
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,11 +96,7 @@ body {
 .menu a:last-child{
     margin-right: 0;
 }
-.header{
-    max-width: 1152px;
-    max-width: 70rem;
 
-}
 .rectangulo{
     background-color: var(--verde);
     height: 70rem;
@@ -163,6 +163,7 @@ span{
     font-weight: bold;
     font-size: var(--f_smaller) ;
     letter-spacing: .2rem;
+    /* padding: 2rem; */
 }
 .boton:hover{
     cursor: pointer;
@@ -263,25 +264,32 @@ span{
     top: -52px;
     right: -70px;
 }
-
-
 /* -- CARACTERISTICAS --  */
-.caracteristicas{
+.contenedor_caracteristicas{
+    display: grid;
+    grid-template-columns:  repeat(2 , 1fr);
+    align-items: center;
+    column-gap: 3rem;
+}
+
+
+/* -- SERVICIOS --  */
+.servicios{
     padding: 2rem;
 }
-.titulo_caracteristicas{
+.titulo_servicios{
     width: 48.7rem;
     text-align: center;
     margin: 0  auto 2.9rem;
     padding: 2rem 0 ;
 }
-.titulo_caracteristicas h1{
+.titulo_servicios h1{
     font-size: 4.4rem;
     font-weight: bold;
     line-height: var(--lineaBigTitles);
     margin-bottom: 1.6rem;
 }
-.titulo_caracteristicas p{
+.titulo_servicios p{
     color: var(--gris);
     font-size: var(--f_small);
 }
