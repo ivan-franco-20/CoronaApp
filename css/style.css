@@ -150,12 +150,11 @@ body {
         flex-direction: column;
         justify-content: space-evenly;
         gap: 2rem;
-        right: -38px;
+        right: -18px;
         top: 7px;
         text-align: end;
         background-color: var(--verde);
         height: 30rem;
-        padding-right: 2rem;
         font-size: var(--f_big);
         -webkit-box-shadow: -16px 16px 13px -5px rgba(29,97,85,1);
         -moz-box-shadow: -16px 16px 13px -5px rgba(29,97,85,1);
